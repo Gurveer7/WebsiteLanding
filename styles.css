@@ -127,3 +127,9 @@ video {
 .smallPic {
     height: 5vh;
 }
+
+@media (max-width: 800px) {
+    nav {
+      width: 100%;
+    }
+  }
