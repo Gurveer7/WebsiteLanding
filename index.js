@@ -82,3 +82,13 @@ pdfjsLib.getDocument("pictures/WaterlooPaymentW2023.pdf").then(function(pdf) {
         page.render(renderContext);
     });
 });
+
+function downloadFile(file) {
+    var link = document.createElement('a');
+    link.href = file;
+    link.download = 'Resume_Gurveer_Grewal';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  }
+  

@@ -14,8 +14,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.225/pdf.min.js"></script>
 
 <body>
-    <div id="background"></div>
-    <div class="hero">
+    <div class="background"></div>
+    <div class="hero background">
         <nav>
             <img src="pictures/mylogo3.png" class="logo grew">
             <ul>
@@ -25,9 +25,14 @@
         </nav>
         
         <div class="detel">
-            <h1>Gurveer <span>Grewal</span></h1>
-            <p>Project Snippets Below! </p>
-            <a class="btn btn-outline-primary" role="button" href="pictures/resume.pdf" download="Resume_Gurveer_Grewal">Download CV</a> 
+            <h1>Gurveer Grewal</h1>
+            <!-- <p>Project Snippets Below! </p> -->
+            
+            <!-- <a class="btn btn-outline-danger" role="button" href="/projects.html">View Projects</a>  -->
+            <button class="shadow__btn background" onclick="window.location.href='projects.html'">
+                Projects
+            </button>
+            <button class="shadow__btn background" onclick="downloadFile('pictures/resume.pdf')">Download CV</button>
         </div>
         <div class="pictures">
             <img src="pictures/mouse.png" class="shape">
