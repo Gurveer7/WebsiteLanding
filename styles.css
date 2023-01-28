@@ -123,6 +123,13 @@ video {
   
 .smallPic {
     height: 9vh;
+    transition: filter 0.5s ease-in-out;
+}
+
+.smallPic:hover {
+    filter: brightness(5.0);
+    transform: scale(1.2);
+    
 }
 .grew
 {
