@@ -54,10 +54,7 @@ nav ul li a:hover{
     margin-bottom: 20px;
 }
 
-span{
-    color: blue;
-    
-}
+
 
 .detel p{
     color: #555;
@@ -181,3 +178,8 @@ video {
                 0 0 100px rgb(0,140,255);
   }
   
+  .bold-big{
+    font-weight: bold;
+    color: white !important;
+    font-size: 3.5vw !important;
+  }
