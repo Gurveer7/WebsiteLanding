@@ -59,30 +59,6 @@ window.addEventListener('load', function() {
     
 });
 
-// Get the canvas element
-var pdfCanvas = document.getElementById("pdf-canvas");
-
-// Asynchronously download the PDF
-pdfjsLib.getDocument("pictures/WaterlooPaymentW2023.pdf").then(function(pdf) {
- 
-    // Get the first page of the PDF
-    pdf.getPage(1).then(function(page) {
-        // Set the scale of the viewport
-        var scale = 1.5;
-        var viewport = page.getViewport({scale: scale});
-        // Set the canvas dimensions to match the viewport
-        pdfCanvas.width = viewport.width;
-        pdfCanvas.height = viewport.height;
-
-        // Render the PDF page on the canvas
-        var renderContext = {
-        canvasContext: pdfCanvas.getContext("2d"),
-        viewport: viewport
-        };
-        page.render(renderContext);
-    });
-});
-
 function downloadFile(file) {
     var link = document.createElement('a');
     link.href = file;
